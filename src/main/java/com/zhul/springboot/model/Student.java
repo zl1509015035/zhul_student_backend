@@ -3,6 +3,9 @@ package com.zhul.springboot.model;
 import com.alibaba.excel.annotation.ExcelProperty;
 import lombok.Data;
 
+/**
+ * @author zhul
+ */
 @Data
 public class Student {
     @ExcelProperty("序号")

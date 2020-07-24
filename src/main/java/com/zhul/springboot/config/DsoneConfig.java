@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 @Configuration
-@MapperScan(basePackages = {"cn.itcast.springboot.mapper.dsone"}, sqlSessionFactoryRef = "sqlSessionFactory1")
+@MapperScan(basePackages = {"com.zhul.springboot.mapper.dsone"}, sqlSessionFactoryRef = "sqlSessionFactory1")
 public class DsoneConfig {
 	@Autowired
     @Qualifier("dsone")

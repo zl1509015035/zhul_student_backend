@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * @author zhul
+ */
 @RestController
 @RequestMapping("/student")
 @Api(tags = "学生处")
