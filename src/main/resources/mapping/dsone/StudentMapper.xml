@@ -8,5 +8,30 @@
 			FROM
 				`student_base_info`
 	</select>
+	<select id="getStudentInfoById" parameterType="java.lang.String" resultType="com.zhul.springboot.model.Student">
+		SELECT
+		*
+		FROM
+		`student_base_info`
+		where
+		1=1
+		AND  STU_ID=#{id}
+
+
+	</select>
+	<select id="getStudentInfoByCondition" parameterType="java.lang.String" resultType="com.zhul.springboot.model.Student">
+			SELECT
+				*
+			FROM
+				`student_base_info`
+			where
+			1=1
+			<if test="id != null and id !=''">	AND  STU_ID=#{id}</if>
+			<if test="name !=null and name != ''">AND STU_NAME=#{name}</if>
+			<if test="address !=null and address != ''">AND STU_ADDRESS=#{address}</if>
+			<if test="age !=null and age != ''">AND STU_AGE=#{age}</if>
+			<if test="grade !=null and grade != ''">AND STU_GRADE=#{grade}</if>
+
+	</select>
 
 </mapper>

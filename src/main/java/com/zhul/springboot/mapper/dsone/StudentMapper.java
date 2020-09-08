@@ -9,4 +9,8 @@ import java.util.List;
 public interface StudentMapper {
 
     List<Student> getStudentInfo();
+
+    Student getStudentInfoById(String id);
+
+    Student getStudentInfoByCondition(String id,String name,String address,String age,String grade);
 }
